@@ -1,0 +1,4 @@
+#!/bin/sh
+export PATH="/usr/local/bin:/usr/local/sbin:$(getconf PATH)"
+wg-quick up "$1"
+sleep 2147483647  # effectively forever
